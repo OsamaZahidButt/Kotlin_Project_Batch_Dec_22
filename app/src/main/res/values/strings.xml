@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kotlin Project Batch Dec 22</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="register">REGISTER</string>
+    <string name="todo">TODO</string>
+    <string name="welcome">Welcome To Kotlin Project Batch December 2022</string>
+    <string name="display_username">Display Username</string>
+    <string name="change_background">CHANGE BACKGROUND</string>
+    <string name="back_to_home_screen">BACK TO HOME SCREEN</string>
+</resources>
