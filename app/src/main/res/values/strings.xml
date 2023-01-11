@@ -13,4 +13,9 @@
     <string name="display_username">Display Username</string>
     <string name="change_background">CHANGE BACKGROUND</string>
     <string name="back_to_home_screen">BACK TO HOME SCREEN</string>
+    <string name="go_to_marketing_screen">Go To Marketing Screen</string>
+    <string name="where_would_you_like_to_go">Where Would You Like To Go?</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="notepad">Notepad</string>
+    <string name="whatsapp">Whatsapp</string>
 </resources>

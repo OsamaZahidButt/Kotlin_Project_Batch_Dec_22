@@ -23,12 +23,17 @@ class NextActivity : AppCompatActivity() {
         var currentImage = 0
         val images = arrayOf(R.drawable.background, R.drawable.background1)
         val change: Button = findViewById(R.id.ChangeBackground)
+        val go: Button = findViewById(R.id.GoToMarketingScreen)
         val back: Button = findViewById(R.id.BackToHomeScreen)
         change.setOnClickListener {
             val relativeLayout: RelativeLayout = findViewById(R.id.relativeLayout)
             currentImage++
             currentImage %= images.size
             relativeLayout.setBackgroundResource(images[currentImage])
+        }
+        go.setOnClickListener {
+            val intent = Intent(this, ImplicitActivity::class.java)
+            startActivity(intent)
         }
         back.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)

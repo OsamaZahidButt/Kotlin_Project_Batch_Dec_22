@@ -38,10 +38,25 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/BackToHomeScreen"
+        android:id="@+id/GoToMarketingScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ChangeBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/go_to_marketing_screen"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/BackToHomeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GoToMarketingScreen"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
