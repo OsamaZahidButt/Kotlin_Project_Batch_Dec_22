@@ -7,6 +7,8 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.thetapractice.kotlinprojectbatchdec22.Database.UserDatabase
+import com.thetapractice.kotlinprojectbatchdec22.Entity.UserEntity
 import java.util.regex.Pattern
 
 class MainActivity1 : AppCompatActivity() {
@@ -36,12 +38,14 @@ class MainActivity1 : AppCompatActivity() {
         {
             val intent = Intent(this, HomeActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-            intent.putExtra("USERNAME1", username)
-            intent.putExtra("EMAIL", email)
-            intent.putExtra("PHONE", phone)
-            intent.putExtra("PASSWORD1", password)
+            //intent.putExtra("USERNAME1", username)
+            //intent.putExtra("EMAIL", email)
+            //intent.putExtra("PHONE", phone)
+            //intent.putExtra("PASSWORD1", password)
             startActivity(intent)
             Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
+            val user = UserEntity(0, username, email, phone)
+            UserDatabase.getDatabase(this).userDao().insertUser(user)
         }
     }
 
